@@ -9,13 +9,13 @@ main{
 	
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
     width: 60em;
 
     text-align: center;
 }
 
-.instructions{
+#instructions{
 	margin-top: 2em;
 	background-color: #ffffff;
 	border-radius: 20px;
@@ -36,7 +36,7 @@ input[type=button], input[type=submit], input[type=reset]{
 	cursor: pointer;
 	outline:none;
 	
-	padding: 0.5em 0.3em;
+	padding: 0.5em 1em;
 	margin: 1em 0;
 	border-radius: 2px;
 	font-size: 1em;
@@ -46,4 +46,42 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
 	background-color: #fee000;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 	transition-duration: 0.5s;
+}
+
+.stimulus{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+
+	margin-top: 0.5em;
+	padding: 0.8em;
+}
+
+#testing{
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 40em;
+}
+
+input[type=text]{
+	line-height: 2em;
+	font-size: 1.5em;
+	border-radius: 5px;
+}
+
+.userInput{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.previousAnswers{
+	color: #62757f;
+	font-size: 0.8em;
+	text-align: left;
+	word-wrap: break-word;
 }

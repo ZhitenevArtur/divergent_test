@@ -4,11 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Divergent Thinking Test "Unusual Use" by J. Guilford.</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 	<main>
-		<div class="instructions">
+		<div id="instructions">
 			<p>Вам будет назван обыкновенный бытовой предмет, у которого есть определённое
 				назначение, с которым Вы хорошо знакомы. Ваша задача заключается в том, чтобы
 				придумать для этого предмета как можно больше необычных и нестандартных
@@ -18,13 +20,27 @@
 				Ваших идей: просто предлагайте как можно более <span class="red">нестандартные</span> и <span class="red">оригинальные</span>.</p>
 				
 				<p>Записывайте свои мысли коротко, но понятно. Каждую новую мысль записывайте на
-				новой строке. <br>На выполнение задания у Вас будет <span class="red">3 минуты</span></p>
-				<input type="submit" value="Окей, я все понял">
+				новой строке. <br>На выполнение задания у Вас будет <span class="red">3 минуты</span>.</p>
+				<input type="submit" onclick="goToNextStage()" value="Окей, Я все понял">
 		</div>
-		<!--<div class="stimulus">
-			<img src="newspapper.ico" alt="Газета">
+		<div id="testing" style="display: none">
+			<div class="shortInst">Придумайтие как нестандартно использовать этот предмет</div>
+			<div class="stimulus">
+				<img src="newspapper.png" alt="Газета">
+				
+				<div id="clock">3:00</div>
+			</div>
+			<form class="userInput">
+				<input type="text" size="50" id="userAnswer" required>
+				<input type="submit" onclick="countdown()" value="Отправить">
+			</form>
+			<div class="previousAnswers" id="answList">
+				<p>Здесь будут появляться ваши ответы:</p>
+			</div>
+
+			<div id="test"></div>
 		</div>
-		<input type="text" size="70">-->
+		
 	</main>
 </body>
 </html>

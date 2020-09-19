@@ -21,8 +21,7 @@ function countdown () {
 		if (questionNumb == 2) {
 			showDummyMessage()
 		}
-		else alert('end');
-    	
+		else showEndingMessage();
 	}
 	else {
 		timer = setTimeout(countdown, 1000);
@@ -59,4 +58,9 @@ function showSecondQuestion () {
 	start = timeToTest;
 	timer = 0;
 	countdown();
+}
+
+function showEndingMessage (argument) {
+	document.getElementById('testing').style.display = 'none';
+	document.getElementById('ending').style.display = 'block';
 }

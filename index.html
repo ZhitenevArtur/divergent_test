@@ -10,7 +10,7 @@
 </head>
 <body>
 	<main>
-		<div id="instructions">
+		<div class="bigMsg" id="instructions">
 			<p>Вам будет назван обыкновенный бытовой предмет, у которого есть определённое
 				назначение, с которым Вы хорошо знакомы. Ваша задача заключается в том, чтобы
 				придумать для этого предмета как можно больше необычных и нестандартных
@@ -21,13 +21,12 @@
 				
 				<p>Записывайте свои мысли коротко, но понятно. Каждую новую мысль записывайте на
 				новой строке. <br>На выполнение задания у Вас будет <span class="red">3 минуты</span>.</p>
-				<input type="submit" onclick="goToNextStage()" value="Окей, Я все понял">
+				<input type="submit" onclick="showFirstQuestion()" value="Окей, Я все понял">
 		</div>
 		<div id="testing" style="display: none">
 			<div class="shortInst">Придумайтие как нестандартно использовать этот предмет</div>
-			<div class="stimulus">
-				<img src="newspapper.png" alt="Газета">
-				
+			<div class="stimulus" id="img">
+				<img src="newspapper.png" alt="Газета" >
 				<div id="clock">3:00</div>
 			</div>
 			<form class="userInput">
@@ -37,6 +36,16 @@
 			<div class="previousAnswers" id="answList">
 				<p>Здесь будут появляться ваши ответы:</p>
 			</div>
+		</div>
+		<div class="bigMsg" id="dummy" style="display: none">
+			<p>Отлично, вы справились с первой половиной тестирования!</p>
+			<p>Немного отвелекитесь, освободите голову от предыдщего предмета. Когда будете 
+			готовы, нажмите на кнопку, чтобы продолжить.</p>
+			
+			<p><span class="red">Напоминание</span>: Ваша задача заключается в том, чтобы придумать как можно больше 
+				необычных и нестандартных вариантов использования для показанного предмета.</p>
+			<p>На выполнение задания у Вас будет <span class="red">3 минуты</span>.</p>
+			<input type="submit" onclick="showSecondQuestion()" value="Приступим">
 		</div>
 		
 	</main>

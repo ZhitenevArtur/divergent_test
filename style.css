@@ -15,7 +15,7 @@ main{
     text-align: center;
 }
 
-#instructions{
+.bigMsg{
 	margin-top: 2em;
 	background-color: #ffffff;
 	border-radius: 20px;

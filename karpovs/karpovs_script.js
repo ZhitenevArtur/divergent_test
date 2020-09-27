@@ -30,8 +30,8 @@ questions =[
 ];
 
 interpretedTable = [0,1,0,0,0,1,1,1,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,1,1]
-answerTable = [7,6,5,4,3,2,1];
-answerInvertedTable = [1,2,3,4,5,6,7];
+answerInvertedTable = [7,6,5,4,3,2,1];
+answerTable = [1,2,3,4,5,6,7];
 final = 0;
 
 answers = [];

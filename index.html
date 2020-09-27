@@ -2,29 +2,72 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=320px, initial-scale=1">
+	<meta name="viewport" content="width=325px, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
-	<script src="script.js"></script>
 	<title>Тестирование</title>
 </head>
 <body>
 	<main>
-		<a href="divergent/divergent.html">
-			<div id="divergent" class="methods">Тест дивергентного мышления «Необычное использование», Дж. Гилфорд.</div>
-		</a>
+		<div class="personal" >
+			<form id="subject">
+				<div class="fio">
+					<p>Фамилия:<br>
+						<input name="lastname" type="text" size="25">
+					</p>
+					<p>Имя:<br>
+						<input name="name" type="text" size="25">
+					</p>
+					<p>Отчество:<br>
+						<input name="midname" type="text" size="25">
+					</p>
+					
+				</div>
+				
+				<div class="sex">
+					<p>Возраст:<br>
+						<input name="age" type="text" size="3">
+					</p>
+					<p>Пол</p>
+					<p><input name="sex" type="radio" value="М">Мужской</p>
+					<p><input name="sex" type="radio" value="Ж">Женский</p>
+				</div>
+				
+				<div class="education">
+					<p>ВУЗ:<br>
+						<input name="university" type="text" size="25">
+					</p>
+					<p>Факультет:<br>
+						<input name="faculty" type="text" size="25">
+					</p>
+					<p>e-mail или VK (по желанию):<br>
+						<input name="email" type="text" size="25">
+					</p>
+				</div>
+				
+				<input type="button" id="formSubmit" value="Подтвердить">
+			</form>
+		</div>
+		
+		<div class="methodics">
+			<a href="divergent/divergent.html">
+				<div id="divergent" class="method">Тест дивергентного мышления «Необычное использование», Дж. Гилфорд.</div>
+			</a>
 
-		<a href="karpovs/karpovs.html">
-			<div id="karpovs" class="methods">Диагностика рефлексии. Методика Карпова.</div>
-		</a>
+			<a href="karpovs/karpovs.html">
+				<div id="karpovs" class="method">Диагностика рефлексии. Методика Карпова.</div>
+			</a>
 
-		<a href="karpovs/karpovs.html">
-			<div id="ravens" class="methods"></div>
-		</a>
+			<a href="">
+				<div id="ravens" class="method"></div>
+			</a>
+		</div>
+		
 		
 		</main>
 		<footer>
-			<a target="_blank"  href="https://vk.com/id66503108">AZ</a>|v2.1
+			<a target="_blank"  href="https://vk.com/id66503108">AZ</a>|v2.5
 		</footer>
 </body>
+<script src="script.js"></script>
 </html>

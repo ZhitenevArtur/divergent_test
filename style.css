@@ -6,10 +6,6 @@ body{
 }
 
 main{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	width: 60em;
 	height: 100vh;
 	margin-left: auto;
@@ -21,13 +17,55 @@ a{
 	color: #000 !important;
 }
 
-.methods{
+form{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: center;
+	justify-content: space-between;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 4px solid #EA4335;
+    outline: none;
+    font-size: 1em;
+}
+
+input[type=button]{
+	background-color: #e0e0e0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	outline:none;
+	
+	padding: 0.5em 1em;
+	margin: 1em 0;
+	border-radius: 2px;
+	font-size: 1em;
+}
+
+input[type=button]:hover{
+	background-color: #EA4335;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	transition-duration: 0.5s;
+}
+
+.method{
 	display: flex;
 	width: 18em;
 	height: 18em;
 	text-align: center;
 	align-items: center;
 	padding: 0.5em;
+}
+
+.methodics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #divergent{
@@ -40,7 +78,11 @@ a{
 }
 
 #ravens{
-	background-color: #EA4335;
+	background-color: #34A853;
+}
+
+#formSubmit{
+	align-self: center;
 }
 
 footer{
@@ -53,27 +95,30 @@ footer{
 @media (min-width: 320px) and (max-width: 480px) {
 	main{
 		width: 100vw;
+	}
+	.methodics, form{
 		font-size: 0.8em;
 		flex-direction: column;
 		height: auto;
 	}
-	.methods{
+	.method{
 		margin: 1em auto;
 		padding: 0 0.5em;
 		width: 15em;
 		height: 15em;
 	}
-
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
 	main{
 		width: 100vw;
+	}
+	.methodics, form{
 		font-size: 0.8em;
 		flex-direction: column;
 		height: auto;
 	}
-	.methods{
+	.method{
 		margin: 1em auto;
 		padding: 0 0.5em;
 		width: 18em;
@@ -84,11 +129,13 @@ footer{
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	main{
 		width: 100vw;
+	}
+	.methodics, form{
 		font-size: 0.8em;
 		flex-direction: column;
 		height: auto;
 	}
-	.methods{
+	.method{
 		margin: 1em auto;
 		padding: 0 0.5em;
 		width: 18em;

@@ -53,7 +53,7 @@ function showDummyMessage () {
 function showSecondQuestion () {
 	document.getElementById('dummy').style.display = 'none';
 	document.getElementById('testing').style.display = 'flex';
-	document.getElementById('img').innerHTML = document.getElementById('img').innerHTML.replace('newspapper.png', 'liner.png');
+	document.getElementById('stimulus').innerHTML = document.getElementById('stimulus').innerHTML.replace('ГАЗЕТА', 'ДЕРЕВЯННАЯ ЛИНЕЙКА');
 	document.getElementById('answList').innerHTML = '<p>Здесь будут появляться ваши ответы:</p>';
 	start = timeToTest;
 	timer = 0;
@@ -63,4 +63,5 @@ function showSecondQuestion () {
 function showEndingMessage (argument) {
 	document.getElementById('testing').style.display = 'none';
 	document.getElementById('ending').style.display = 'block';
+	localStorage.setItem("first", "done");
 }

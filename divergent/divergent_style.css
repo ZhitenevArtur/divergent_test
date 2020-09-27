@@ -1,0 +1,173 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.25em;
+	background-color: #fee000;
+}
+main{
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width: 60em;
+
+    text-align: center;
+}
+
+.bigMsg{
+	margin-top: 2em;
+	background-color: #ffffff;
+	border-radius: 20px;
+	padding: 0.8em;
+}
+
+.red{
+	color: #ff4433;
+	font-size: 115%;
+}
+
+input[type=submit]{
+	background-color: #e0e0e0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	outline:none;
+	
+	padding: 0.5em 1em;
+	margin: 1em 0;
+	border-radius: 2px;
+	font-size: 1em;
+}
+
+input[type=submit]:hover{
+	background-color: #fee000;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	transition-duration: 0.5s;
+}
+
+.stimulus{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5em;
+	padding: 0.8em;
+}
+
+#testing{
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 40em;
+}
+
+input[type=text]{
+	line-height: 2em;
+	font-size: 1.5em;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.userInput{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.previousAnswers{
+	color: #62757f;
+	font-size: 0.8em;
+	text-align: left;
+	word-wrap: break-word;
+}
+
+
+/* 
+ ##Device = Desktops
+ ##Screen = 1281px to higher resolution desktops
+*/
+ @media (min-width: 1281px) {
+ }
+ 
+/* 
+ ##Device = Laptops, Desktops
+ ##Screen = B/w 1025px to 1280px
+*/
+ @media (min-width: 1025px) and (max-width: 1280px) {
+ 	main{
+			width: 100vw;
+		}
+	}
+ }
+ 
+/* 
+ ##Device = Tablets, iPads (portrait)
+ ##Screen = B/w 768px to 1024px
+*/
+ @media (min-width: 768px) and (max-width: 1024px)  and (orientation: portrait) {
+	main{
+			width: 100vw;
+		}
+	}
+ 
+/* 
+ ##Device = Tablets, iPads (Landscape)
+ ##Screen = B/w 768px to 1024px
+*/
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	main{
+		width: 100vw;
+	}
+		.bigMsg{
+		margin-top: 5em;
+		border-radius: 5px;
+		padding: 0.8em;
+	}
+ }
+ 
+/* 
+ ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+ @media (min-width: 481px) and (max-width: 767px) {
+	main{
+		width: 100vw;
+		font-size: 1em;
+	}
+	.bigMsg{
+		border-radius: 5px;
+		padding: 1.2em;
+		height: 100vh;
+		margin-top: 0em;
+	}
+	#testing{
+		width: 80vw;
+		align-items: center;
+	}
+ }
+ 
+/*
+ ##Device = Most of the Smartphones Mobiles (Portrait)
+ ##Screen = B/w 320px to 479px
+*/
+ @media (min-width: 320px) and (max-width: 480px) {
+	main{
+		width: 100vw;
+		font-size: 0.8em;
+	}
+	.bigMsg{
+		margin: 0em;
+		height: 100vh;
+		border-radius: 5px;
+		padding: 0.8em;
+	}
+	#testing{
+		width: 80vw;
+		align-items: center;
+	}
+}
+	

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=320px, initial-scale=1">
+	<title>Методика Карпова. Диагностика рефлексии</title>
+	<link rel="stylesheet" href="karpovs_style.css">
+	<script src="karpovs_script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<div class="bigMsg" id="instructions" >
+			<p>Вам предстоит дать ответы на несколько утверждений опросника. </p>
+			<p>Из предложенных вариантов овтета выберите тот, который больше всего соответсвует вашему мнению.</p>
+			<input type="submit" onclick="startTesting()" value="Окей, Я все понял">
+		</div>
+
+		<div id="testing" style="display: none">
+			<div class="question" id="question"></div>
+
+			<div class="answers">
+				<button value="0" onclick="getAnswer(this.value)">Абсолютно неверно</button>
+				<button value="1" onclick="getAnswer(this.value)">Неверно</button>
+				<button value="2" onclick="getAnswer(this.value)">Скорее неверно</button>
+				<button value="3" onclick="getAnswer(this.value)">Не знаю</button>
+				<button value="4" onclick="getAnswer(this.value)">Скорее верно</button>
+				<button value="5" onclick="getAnswer(this.value)">Верно</button>
+				<button value="6" onclick="getAnswer(this.value)">Совершенно верно</button>
+			</div>
+		</div>
+
+		<div class="bigMsg" id="final" style="display: none">
+			<p id="answers">Ответы: </p>
+			<p id="total">Общее количество баллов: </p>
+		</div>
+
+	</main>
+</body>
+</html>

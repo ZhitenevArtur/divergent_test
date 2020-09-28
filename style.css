@@ -17,12 +17,14 @@ a{
 	color: #000 !important;
 }
 
-form{
+.personal{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	align-content: center;
 	justify-content: space-between;
+
+	margin: 2em 0;
 }
 
 input[type=text] {
@@ -66,6 +68,8 @@ input[type=button]:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	margin-top: 5em;
 }
 
 #divergent{
@@ -96,7 +100,7 @@ footer{
 	main{
 		width: 100vw;
 	}
-	.methodics, form{
+	.methodics, .personal{
 		font-size: 0.8em;
 		flex-direction: column;
 		height: auto;
@@ -113,7 +117,7 @@ footer{
 	main{
 		width: 100vw;
 	}
-	.methodics, form{
+	.methodics, .personal{
 		font-size: 0.8em;
 		flex-direction: column;
 		height: auto;
@@ -130,7 +134,7 @@ footer{
 	main{
 		width: 100vw;
 	}
-	.methodics, form{
+	.methodics, .personal{
 		font-size: 0.8em;
 		flex-direction: column;
 		height: auto;

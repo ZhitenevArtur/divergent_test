@@ -49,6 +49,7 @@ input[type=submit]:hover{
 	height: 12em;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
 	margin: 8em auto 0 auto; 
 
 	background-color: #ffffff;
@@ -85,9 +86,23 @@ button:hover{
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-		main{
-			width: 100vw;
-		}
+	main{
+		width: 100vw;
+	}
+	.bigMsg{
+		margin: 0em;
+		height: 100vh;
+		border-radius: 5px;
+		padding-top: 6em;
+	}
+	#testing{
+		width: 90vw;
+		align-items: center;
+		height: 80vh;
+		margin-top: 10vh; 
+	}
+	.answers{
+		flex-direction: column;
 	}
 }
 
@@ -104,8 +119,8 @@ button:hover{
 	#testing{
 		width: 90vw;
 		align-items: center;
-		height: auto;
-		margin: 1em auto; 
+		height: 80vh;
+		margin-top: 10vh; 
 	}
 	.answers{
 		flex-direction: column;
@@ -125,8 +140,8 @@ button:hover{
 	#testing{
 		width: 90vw;
 		align-items: center;
-		height: auto;
-		margin: 1em auto; 
+		height: 80vh;
+		margin-top: 10vh; 
 	}
 	.answers{
 		flex-direction: column;
@@ -147,8 +162,8 @@ button:hover{
 	#testing{
 		width: 90vw;
 		align-items: center;
-		height: auto;
-		margin: 1em auto; 
+		height: 80vh;
+		margin-top: 10vh; 
 	}
 	.answers{
 		flex-direction: column;
@@ -168,8 +183,8 @@ button:hover{
 	}
 	#testing{
 		width: 90vw;
-		height: auto;
-		margin-top: 4em;
+		height: 80vh;
+		margin-top: 10vh;
 	}
 	.answers{
 		flex-direction: column;

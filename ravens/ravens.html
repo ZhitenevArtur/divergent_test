@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <title>Тестирование продвинутыми прогрессивынми матрицами. Методика Равена.</title>
+    <link rel="stylesheet" href="ravens_style.css">
+    <script src="ravens_script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="bigMsg" id="instructions">
+            <p>Вам будут представлен ряд фигур, в котором пропущен один из элементов. </p>
+            <p>Из предложенных вариантов выберите ту фигуру, которая, по вашему мнению, наиболее соответствует пропущенной.</p>
+            <input type="submit" onclick="startTesting()" value="Окей, Я все понял">
+        </div>
+
+        
+
+        <div id="testing" style="display: none">
+            <div id="clock">12:00</div>
+            <div class="question" id="question"></div>
+            <div class="option" id="option">
+            </div>
+        </div>
+
+        <div class="bigMsg" id="final" style="display: none">
+            <p id="answers">Ответы: </p>
+            <p id="total">Общее количество баллов: </p>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,6 +1,8 @@
 questionNumb = 1;
 let answersFirst = [];
 let answersSecond = [];
+let markFirst = [];
+let markSecond = [];
 let timeToTest = 180; 
 
 function showFirstQuestion() {
@@ -21,7 +23,7 @@ function countdown () {
 		if (questionNumb == 2) {
 			showDummyMessage()
 		}
-		else showEndingMessage();
+		else showMarkMessage();
 	}
 	else {
 		timer = setTimeout(countdown, 1000);
@@ -60,8 +62,49 @@ function showSecondQuestion () {
 	countdown();
 }
 
-function showEndingMessage (argument) {
+function showMarkMessage () {
 	document.getElementById('testing').style.display = 'none';
+	document.getElementById('marker').style.display = 'block';
+	if(answersFirst.length == 0){
+		questionNumb = 2;
+		document.getElementById('answer').innerHTML = answersSecond[0];
+	}
+	else {
+		questionNumb = 1;
+		document.getElementById('answer').innerHTML = answersFirst[0];
+	}
+}
+
+function showEndingMessage (argument) {
+	document.getElementById('marker').style.display = 'none';
 	document.getElementById('ending').style.display = 'block';
-	localStorage.setItem("first", "done");
+}
+
+let qurrentAnswer = 0;
+
+function markAnswer (option){
+	if(questionNumb == 1){
+		markFirst.push(option);
+		qurrentAnswer++;
+		if(qurrentAnswer >= answersFirst.length){
+			questionNumb = 2;
+			qurrentAnswer = 0;
+			if (answersSecond.length != 0){
+				document.getElementById('answer').innerHTML = answersSecond[qurrentAnswer];
+			}
+			else showEndingMessage();
+		}
+		else{
+			document.getElementById('answer').innerHTML = answersFirst[qurrentAnswer];
+		}
+	}
+	else if(questionNumb == 2){
+		markSecond.push(option);
+		qurrentAnswer++;
+		document.getElementById('answer').innerHTML = answersSecond[qurrentAnswer];
+		if(qurrentAnswer >= answersSecond.length){
+			showEndingMessage();
+		}
+	}
+	else showEndingMessage();
 }

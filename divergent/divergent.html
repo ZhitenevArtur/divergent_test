@@ -47,6 +47,16 @@
 			<p>На выполнение задания у Вас будет <span class="red">3 минуты</span>.</p>
 			<input type="submit" onclick="showSecondQuestion()" value="Приступим">
 		</div>
+		<div class="bigMsg" id="marker" style="display: none">
+			<p>Разделите названные вами идеи на те, что были придуманы вами здесь и сейчас,
+				о которых вы раньше не думали и на те, что были ранее придуманы вами или кем-то еще.</p>
+			<div class="mark">
+				<div id="answer"></div>
+				<input type="submit" onclick="markAnswer(1)" value="Новая идея">
+				<input type="submit" onclick="markAnswer(0)" value="Старая идея">
+			</div>
+			<a href="../index.html"><input type="submit" onclick="" value="Вернуться к остальным тестам"></a>
+		</div>
 		<div class="bigMsg" id="ending" style="display: none">
 			<p><span class="red">Отлично!</span> Вы справились с задачей.</p>
 			<a href="../index.html"><input type="submit" onclick="" value="Вернуться к остальным тестам"></a>

@@ -6,12 +6,10 @@ body{
 	background-color: #fee000;
 }
 main{
-	
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
     width: 60em;
-
     text-align: center;
 }
 
@@ -92,6 +90,11 @@ input[type=text]{
 	word-wrap: break-word;
 }
 
+.mark{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
 /* 
  ##Device = Desktops
@@ -105,9 +108,8 @@ input[type=text]{
  ##Screen = B/w 1025px to 1280px
 */
 @media (min-width: 1025px) and (max-width: 1280px) {
-		main{
-			width: 100vw;
-		}
+	main{
+		width: 100vw;
 	}
 }
  

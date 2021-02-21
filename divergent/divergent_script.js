@@ -78,6 +78,12 @@ function showMarkMessage () {
 function showEndingMessage (argument) {
 	document.getElementById('marker').style.display = 'none';
 	document.getElementById('ending').style.display = 'block';
+
+	sessionStorage.divergentFirstAnswer = JSON.stringify(answersFirst);
+	sessionStorage.divergentSecondAnswer = JSON.stringify(answersSecond);
+	sessionStorage.divergentFirstMarks = JSON.stringify(markFirst);
+	sessionStorage.divergentSecondMarks = JSON.stringify(markSecond);
+	sessionStorage.divergent = 1;
 }
 
 let qurrentAnswer = 0;

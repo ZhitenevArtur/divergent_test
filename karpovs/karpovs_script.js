@@ -71,4 +71,8 @@ function showEndingMessage() {
 	document.getElementById('final').style.display = 'block';
 	document.getElementById('answers').innerHTML += answers;
 	document.getElementById('total').innerHTML += final;
+
+	sessionStorage.karpovsAnswers = JSON.stringify(answers);
+	sessionStorage.karpovsResult = JSON.stringify(final);
+	sessionStorage.karpovs = 1;
 }

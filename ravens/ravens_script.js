@@ -37,6 +37,10 @@ function showEndingMessage() {
     document.getElementById('final').style.display = 'block';
     document.getElementById('answers').innerHTML += answers;
     document.getElementById('total').innerHTML += result;
+
+    sessionStorage.ravensAnswers = JSON.stringify(answers);
+	sessionStorage.ravensResult = JSON.stringify(result);
+	sessionStorage.ravens = 1;
 }
 
 function countdown() {

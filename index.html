@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=325px, initial-scale=1">
+	<meta name="viewport" content="width=325, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+	<script type="text/javascript" src="source/script/FileSaver.min.js"></script>
 	<title>Тестирование</title>
 </head>
 <body>
@@ -39,7 +41,7 @@
 					<p>Факультет:<br>
 						<input name="faculty" type="text" size="25">
 					</p>
-					<p>e-mail или VK (по желанию):<br>
+					<p>e-mail или VK:<br>
 						<input name="email" type="text" size="25">
 					</p>
 				</div>
@@ -47,6 +49,11 @@
 				<input type="button" id="formSubmit" value="Подтвердить">
 		</form>
 		
+		<div id ="downloadBlock" class="download">
+			<p>Поздравляем! Все тестирования пройдены. Теперь Вы можете скачать результаты.</p>
+			<input type="button" id="download" value="Скачать">
+		</div>
+
 		<div class="methodics">
 			<a href="divergent/divergent.html">
 				<div id="divergent" class="method">Тест дивергентного мышления «Необычное использование». <br>Методика Дж. Гилфорд.</div>
@@ -64,7 +71,7 @@
 		
 		</main>
 		<footer>
-			<a target="_blank"  href="https://vk.com/id66503108">AZ</a>|v2.55
+			<a target="_blank"  href="https://vk.com/id66503108">AZ</a>|<span id = "reset">v3.00</span>
 		</footer>
 </body>
 <script src="script.js"></script>
